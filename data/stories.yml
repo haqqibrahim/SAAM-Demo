@@ -1,0 +1,41 @@
+version: "2.0"
+
+stories:
+
+- story: anxiety_test_path_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: anxiety_test
+  - action: utter_alright
+  - action: utter_terror
+  - or:
+    - intent: affirm
+    - intent: deny
+    - intent: average
+  - action: action_score
+  - action: utter_nervous
+  - or:
+    - intent: affirm
+    - intent: deny
+    - intent: average
+  - action: action_score
+  - action: utter_bad_things
+  - or:
+    - intent: affirm
+    - intent: deny
+    - intent: average
+  - action: action_score
+  - action: utter_heart
+  - or:
+    - intent: affirm
+    - intent: deny
+    - intent: average
+  - action: action_score
+  - action: utter_muscle
+  - or:
+    - intent: affirm
+    - intent: deny
+    - intent: average
+  - action: action_score
+  - action: action_result

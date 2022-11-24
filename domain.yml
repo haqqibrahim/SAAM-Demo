@@ -1,0 +1,50 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - average
+  - bot_challenge
+  - anxiety_test
+
+
+responses:
+  utter_greet:
+  - text: "Hey! My name is Dr.SAAM and i give anxiety assessment"
+  - text: "Hi there, i go by Dr.SAAM and i give anxiety assessment"
+
+  utter_alright:
+  - text: "Oh okay"
+  - text: "Alright then"
+  - text: "Okayyy"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_terror:
+  - text: "Have you recently felt moments of sudden terror, fear, or fright?"
+
+  utter_nervous:
+  - text: "Have you recently felt anxious, worried, or nervous?"
+
+  utter_bad_things:
+  - text: "Have you recently had thoughts of bad things happening, such as family tragedy, ill health, loss of a job, or accidents?"
+
+  utter_heart:
+  - text: "Have you recently felt a racing heart, sweaty, trouble breathing, faint, or shaky?"
+
+  utter_muscle:
+  - text: "Have you recently felt tense muscles, felt on edge or restless, or had trouble relaxing or trouble sleeping?"
+
+  utter_iamabot:
+  - text: "I am a prototype of Dr.SAAM, powered by Omari AI."
+
+actions:
+- action_score 
+- action_result
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

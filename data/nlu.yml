@@ -1,0 +1,84 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - most of the time
+    - All of the time
+    - a lot of times
+    - very frequent
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - occasionally
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    
+
+- intent: average
+  examples: |
+    - half of the time
+    - half the time
+    - like half of the time
+    - not really frequent
+    - not all the time
+
+- intent: anxiety_test
+  examples: |
+    - i want to take an anxiety test
+    - i would like to have an anxiety test
+    - i would like to pertake in an anxiety assessment
+    - i want to have an anxiety assessment
+    - i want to take an anxiety assessment
+    - i would like to assess my anxiety
+    - i would like to assess my anxiety level
+    - i would like to test my anxiety level
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
